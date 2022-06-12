@@ -1,0 +1,44 @@
+/*Features*/
+.features-list {
+  //--indent: 60px;
+  @extend %grid;
+
+  &__item {
+    @extend %grid__item;
+    --items: 4;
+  }
+
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--title-text-color);
+
+    cursor: default;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    cursor: default;
+  }
+}

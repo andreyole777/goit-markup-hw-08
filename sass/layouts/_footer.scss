@@ -1,0 +1,32 @@
+/*Footer*/
+.footer-section {
+  padding: 60px 0;
+  background-color: #2f303a;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__socials {
+    margin-left: 85px;
+  }
+
+  &__form {
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-text-color);
+
+    cursor: default;
+  }
+}

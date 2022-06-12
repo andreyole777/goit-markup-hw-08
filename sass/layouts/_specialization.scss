@@ -1,0 +1,40 @@
+/*Our specialization*/
+
+.work-list {
+  //--indent: 50px;
+  @extend %grid;
+
+  &__item {
+    @extend %grid__item;
+
+    --items: 3;
+
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 70px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-text-color);
+
+    cursor: default;
+  }
+}
