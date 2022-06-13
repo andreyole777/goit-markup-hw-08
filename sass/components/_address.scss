@@ -1,6 +1,11 @@
 /*Address block*/
 .address-section {
+  text-align: center;
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .address-list {
