@@ -3,21 +3,34 @@
   border-bottom: 1px solid #ececec;
 
   &__container {
+    position: relative;
     display: flex;
     align-items: center;
   }
+
+  &__menu {
+    position: absolute;
+    display: none;
+    width: 100%;
+  }
+}
+
+.menu-button {
+  margin-left: auto;
+  border: none;
 }
 
 /*Navigation*/
 .main-nav {
-  display: flex;
-  align-items: center;
+  //display: flex;
+  //align-items: center;
 
   &__list {
-    display: flex;
+    //display: flex;
 
-    margin-left: 93px;
-    gap: 50px;
+    //margin-left: 93px;
+    //gap: 50px;
+    list-style: none;
   }
 }
 
@@ -49,7 +62,7 @@
 }
 
 /*Contacts*/
-.contacts {
+/*.contacts {
   display: flex;
 
   margin-left: auto;
@@ -68,4 +81,4 @@
   &__icon {
     fill: currentColor;
   }
-}
+}*/

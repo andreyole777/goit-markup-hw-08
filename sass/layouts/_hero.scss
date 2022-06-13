@@ -1,8 +1,8 @@
 /*Hero*/
 .hero-section {
-  max-width: 1600px;
-  min-height: 600px;
-  padding: 200px 0;
+  max-width: 768px;
+  min-height: 400px;
+  padding: 118px 0;
   margin: 0 auto;
 
   text-align: center;
@@ -14,16 +14,30 @@
   background-size: cover;
   background-position: center;
 
+  @media screen and (min-width: 768px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    min-height: 600px;
+  }
+
   &__title {
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: var(--white-text-color);
 
     cursor: default;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }

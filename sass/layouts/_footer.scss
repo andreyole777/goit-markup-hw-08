@@ -5,15 +5,32 @@
 
   &__container {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
   }
 
   &__socials {
-    margin-left: 85px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 85px;
+    }
   }
 
   &__form {
-    margin-left: auto;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
   }
 
   &__title {

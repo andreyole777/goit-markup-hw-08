@@ -5,7 +5,14 @@
 
   &__item {
     @extend %grid__item;
-    --items: 4;
+
+    @media screen and (min-width: 768px) {
+      --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --items: 4;
+    }
   }
 
   &__icon-box {
@@ -13,12 +20,17 @@
     align-items: center;
     justify-content: center;
 
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
 
     background-color: var(--secondary-bg-color);
     border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
   }
 
   &__title {
@@ -28,10 +40,18 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 
     color: var(--title-text-color);
 
     cursor: default;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
   }
 
   &__text {
